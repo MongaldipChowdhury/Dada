@@ -600,10 +600,10 @@
 
                 <p id="pesan1">Tap here for your birthday surprise! 🎉&#10084;</p>
                 <div id="kolombaru">
-                        <li id="lv1">🎂</li>
-                        <li id="lv2">🎁</li>
-                        <li id="lv3">🥳</li>
-                        <li id="lv4">💖</li>
+                    <li id="lv1">🎂</li>
+                    <li id="lv2">🎁</li>
+                    <li id="lv3">🥳</li>
+                    <li id="lv4">💖</li>
                 </div>
 
                 <p id="pesan2">Wait...</p>
@@ -629,12 +629,12 @@
         <div id="Tombol"><a id="By">&#128140; Continue</a></div>
 
         <!-- Pesan Tambahan -->
-        <p id="katatambahan" class="sembunyi">Just Kidding Heheheh 😂</p>
+        <p id="katatambahan" class="sembunyi">Kichui nei , moja korchilam Heheheh 😂</p>
 
         <!-- Pesan Ditolak -->
         <div id="pesanditolak">
             <img id="stikerditolak" src="./assets/weee.gif" />
-            <p id="kataditolak">Just Kidding Heheheh 😂</p>
+            <p id="kataditolak">Kichui Nei, mona korchilam Heheheh 😂</p>
         </div>
 
     </div>
@@ -653,25 +653,25 @@
             });
             if (nama && nama.length < 11) {
 
-const allowedNames = ["Mritunjoy", "mritunjoy", "Mritunjoy chowdhury", "Mritunjoy Chowdhury" ,"mritunjoy chowdhury" ];
-  if (allowedNames.includes(nama.trim())) {
+                const allowedNames = ["Mritunjoy", "mritunjoy", "Mritunjoy chowdhury", "Mritunjoy Chowdhury", "mritunjoy chowdhury"];
+                if (allowedNames.includes(nama.trim())) {
 
-                window.nama = nama;
-                vketikhalo = "Hi, " + nama + " &#10084;";
-                await swals.fire('Hello,  Dada ツ');
-                await swals.fire('Happy Birthday...🎉');
-                await swals.fire('Mukhe bole ba text kore to protibar Wish kori');
-                await swals.fire('Kintu Ei bar kichu alada korbo vebe ei sob kore6i');
-                pilihwarna();
+                    window.nama = nama;
+                    vketikhalo = "Hi, " + nama + " &#10084;";
+                    await swals.fire('Hello,  Dada ツ');
+                    await swals.fire('Happy Birthday...🎉');
+                    await swals.fire('Mukhe bole ba text kore to protibar Wish kori');
+                    await swals.fire('Kintu Ei bar kichu alada korbo vebe ei sob kore6i');
+                    pilihwarna();
 
-  } else {
-    await Swal.fire({
-  title: `${nama.trim()}! আজ তো তোমার জন্মদিন নয় 😅`,
-  text: "আজ তো দাদার জন্মদিন 🎉🎂 প্লিজ দাদার নাম লেখো ❤️",
-  icon: "info",
-}); 
- inipesan();
-  }
+                } else {
+                    await Swal.fire({
+                        title: `${nama.trim()}! আজ তো তোমার জন্মদিন নয় 😅`,
+                        text: "আজ তো দাদার জন্মদিন 🎉🎂 প্লিজ দাদার নাম লেখো ❤️",
+                        icon: "info",
+                    });
+                    inipesan();
+                }
 
             } else {
                 await swals.fire('Oops!', 'Name cannot be empty or more than 10 characters!');
@@ -705,7 +705,7 @@ const allowedNames = ["Mritunjoy", "mritunjoy", "Mritunjoy chowdhury", "Mritunjo
             } else {
                 await swals.fire('Yeayy!', '<b>Red</b> beche6o , er mane, ei sob er jonno tumi amake kichu gift dibe! &#129315;');
                 var { isConfirmed: warna2 } = await swals.fire({
-                    title:  'Dada , Tumi sure to? Tumi Red choose korte chao?',
+                    title: 'Dada , Tumi sure to? Tumi Red choose korte chao?',
                     text: 'Naki tumi color Change korte chao? Problem nei change korte paro', showCancelButton: true,
                     confirmButtonText: 'Change',
                     cancelButtonText: 'Sure',
@@ -721,12 +721,12 @@ const allowedNames = ["Mritunjoy", "mritunjoy", "Mritunjoy chowdhury", "Mritunjo
         }
 
         //Variable Pertanyaan Akhir
-        var tanya = 'Do you want a gift? ';
+        var tanya = 'Sir Upni ki Kono Gift chaichen ? ';
         var opstanya = 'Please answer';
         var tompositif = 'Yes';
         var tomnegatif = 'Yes Yes Yes &#10084;';
 
-        async function menuju() { pesanwhatsapp = "Thank you for wishing " + nama + " a happy birthday ><"; await swals.fire('OK!', 'Please screen record this, sometimes my code has errors, I\'m still learning', 'success'); window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp; }
+        async function menuju() { await swals.fire('OK!', 'jaihok sob dekhle , r ekta jinis ache.. eta thik gift na...but dekho & Suno', 'success'); window.location.href = "https://mongaldipchowdhury.github.io/Mongaldip/" }
 
         function initengahan() {
             kadoIn.style = "display:none"; ket.style = "display:none";
@@ -881,24 +881,4 @@ const allowedNames = ["Mritunjoy", "mritunjoy", "Mritunjoy chowdhury", "Mritunjo
         var otoaktipesan = 0;
         function toaktipesan() { kalimat.innerHTML = vketik10; kalimat.style = "transform:scale(1);font-size:22px;font-family:var(--gaya-font3)"; }
 
-        document.getElementById("lv1").onclick = function () { lv1.style = "opacity:0"; slov += 1; this.onclick = null; checkslov(); }
-        document.getElementById("lv2").onclick = function () { lv2.style = "opacity:0"; slov += 1; this.onclick = null; checkslov(); }
-        document.getElementById("lv3").onclick = function () { lv3.style = "opacity:0"; slov += 1; this.onclick = null; checkslov(); }
-        document.getElementById("lv4").onclick = function () { lv4.style = "opacity:0"; slov += 1; this.onclick = null; checkslov(); }
-        var slov = 0; function checkslov() { if (slov == 4) { kolombaru.style = "position:relative;transform:scale(1)"; otomatis(); setTimeout(aktipesan2, 400); } }
-
-        async function pertanyaan() {
-            var { isConfirmed: prtanya } = await swals.fire({ title: nama + ' ' + tanya, text: '' + opstanya, imageUrl: '' + fotostiker6.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif, });
-            if (prtanya) {
-                await swalst.fire({ title: '' + katatambahan.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src, });
-                vketik8 = vketik81; aktipesan8();
-            } else {
-                await swalst.fire({ title: '' + kataditolak.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src, });
-                vketik8 = ""; aktipesan8();
-            }
-        }
-    </script>
-    <!-- Sampai Sini -->
-</body>
-
-</html>
+        document.getElementById("lv1").onclick = function () { lv1.style = "opacity:0"; slov += 1; this.oncli
