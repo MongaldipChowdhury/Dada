@@ -69,16 +69,16 @@
     }
 
     body::before {
-                content: "\00A9  Instagram | mongaldipchowdhury";
-                        color: white;
-                                opacity: .05;
-                                        font-size: 10px;
-                                                position: fixed;
-                                                        bottom: 25px;
-                                                                right: 25px;
-                                                                        z-index: 2
+        content: "\00A9  Instagram | mongaldipchowdhury";
+       color: white;
+       opacity: .05;
+       font-size: 10px;
+       position: fixed;
+       bottom: 25px;
+       right: 25px;
+       z-index: 2
     }
-    }
+    
 
     #bodyblur {
         opacity: 0;
@@ -884,22 +884,22 @@
 
         document.getElementById("lv1").onclick = function () { lv1.style = "opacity:0"; slov += 1; this.onclick = null; checkslov(); }
                 document.getElementById("lv2").onclick = function () { lv2.style = "opacity:0"; slov += 1; this.onclick = null; checkslov(); }
-                        document.getElementById("lv3").onclick = function () { lv3.style = "opacity:0"; slov += 1; this.onclick = null; checkslov(); }
-                                document.getElementById("lv4").onclick = function () { lv4.style = "opacity:0"; slov += 1; this.onclick = null; checkslov(); }
-                                        var slov = 0; function checkslov() { if (slov == 4) { kolombaru.style = "position:relative;transform:scale(1)"; otomatis(); setTimeout(aktipesan2, 400); } }
+                document.getElementById("lv3").onclick = function () { lv3.style = "opacity:0"; slov += 1; this.onclick = null; checkslov(); }
+               document.getElementById("lv4").onclick = function () { lv4.style = "opacity:0"; slov += 1; this.onclick = null; checkslov(); }
+              var slov = 0; function checkslov() { if (slov == 4) { kolombaru.style = "position:relative;transform:scale(1)"; otomatis(); setTimeout(aktipesan2, 400); } }
 
-                                                async function pertanyaan() {
-                                                            var { isConfirmed: prtanya } = await swals.fire({ title: nama + ' ' + tanya, text: '' + opstanya, imageUrl: '' + fotostiker6.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif, });
-                                                                        if (prtanya) {
-                                                                                        await swalst.fire({ title: '' + katatambahan.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src, });
-                                                                                                        vketik8 = vketik81; aktipesan8();
-                                                                                                                    } else {
-                                                                                                                                    await swalst.fire({ title: '' + kataditolak.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src, });
-                                                                                                                                                    vketik8 = ""; aktipesan8();
-                                                                                                                                                                }
-                                                                                                                                                                        }
-                                                                                                                                                                            </script>
-                                                                                                                                                                                <!-- Sampai Sini -->
-                                                                                                                                                                                </body>
+                async function pertanyaan() {
+                var { isConfirmed: prtanya } = await swals.fire({ title: nama + ' ' + tanya, text: '' + opstanya, imageUrl: '' + fotostiker6.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif, });
+               if (prtanya) {
+              await swalst.fire({ title: '' + katatambahan.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src, });
+             vketik8 = vketik81; aktipesan8();
+            } else {
+            await swalst.fire({ title: '' + kataditolak.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src, });
+            vketik8 = ""; aktipesan8();
+           }
+           }
+          </script>
+          <!-- Sampai Sini -->
+         </body>
 
-                                                                                                                                                                                </html>
+       </html>
